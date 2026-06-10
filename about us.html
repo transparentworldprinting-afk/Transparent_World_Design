@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Transparent World Engineering Designs</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* HEADER */
+header{
+    background:#0d1b2a;
+    padding:15px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}
+
+.logo h2{
+    color:white;
+    font-size:1.1rem;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#00b4d8;
+}
+
+.menu-btn{
+    display:none;
+    color:white;
+    font-size:2rem;
+    cursor:pointer;
+}
+
+/* HERO */
+.about-hero{
+    background:linear-gradient(rgba(13,27,42,.85),
+    rgba(13,27,42,.85)),
+    url("about-bg.jpg") center/cover;
+    padding:120px 20px;
+    text-align:center;
+}
+
+.about-hero h1{
+    color:white;
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.about-hero p{
+    color:#ddd;
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* CONTENT */
+.section{
+    padding:80px 10%;
+}
+
+.content-box{
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 5px 25px rgba(0,0,0,.08);
+}
+
+.content-box h2{
+    color:#0d1b2a;
+    margin-bottom:20px;
+}
+
+.content-box p{
+    line-height:1.9;
+    color:#555;
+    margin-bottom:20px;
+}
+
+/* VALUES */
+.values{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.value-card{
+    background:#ffffff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.value-card h3{
+    color:#0d1b2a;
+    margin-bottom:15px;
+}
+
+.value-card p{
+    color:#666;
+    line-height:1.7;
+}
+
+/* FOOTER */
+footer{
+    background:#0d1b2a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.nav-links{
+    position:absolute;
+    top:90px;
+    right:0;
+    width:250px;
+    background:#0d1b2a;
+    flex-direction:column;
+    display:none;
+    gap:0;
+}
+
+.nav-links.active{
+    display:flex;
+}
+
+.nav-links li{
+    border-top:1px solid rgba(255,255,255,.1);
+}
+
+.nav-links a{
+    display:block;
+    padding:15px 20px;
+}
+
+.menu-btn{
+    display:block;
+}
+
+.logo h2{
+    font-size:.9rem;
+}
+
+.about-hero h1{
+    font-size:2.2rem;
+}
+
+.content-box{
+    padding:30px;
+}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+    <img src="logo.png" alt="Logo">
+    <h2>Transparent World Engineering Designs</h2>
+</div>
+
+<ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about us.html">About Us</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact us.html">Contact Us</a></li>
+</ul>
+
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+</nav>
+
+</header>
+
+<section class="about-hero">
+    <h1>About Us</h1>
+    <p>
+        Delivering innovative engineering solutions through excellence,
+        integrity, creativity, and professional expertise.
+    </p>
+</section>
+
+<section class="section">
+
+<div class="content-box">
+
+<h2>Who We Are</h2>
+
+<p>
+Transparent World Engineering Designs is a professional engineering and
+design consultancy dedicated to providing innovative, practical, and
+cost-effective solutions for infrastructure, industrial, commercial,
+and community development projects.
+</p>
+
+<p>
+Our team is committed to delivering high-quality engineering designs,
+technical consulting services, project planning, drafting, and
+construction support that meet industry standards and client
+expectations.
+</p>
+
+<p>
+We believe that engineering is more than designing structures and
+systems—it is about creating sustainable solutions that improve lives,
+support economic growth, and contribute to a better future.
+</p>
+
+<h2>Our Mission</h2>
+
+<p>
+To provide reliable, innovative, and sustainable engineering design
+services that help clients achieve their project goals efficiently,
+safely, and successfully.
+</p>
+
+<h2>Our Vision</h2>
+
+<p>
+To become a trusted leader in engineering design and consulting,
+recognized for excellence, innovation, professionalism, and commitment
+to quality.
+</p>
+
+</div>
+
+<div class="values">
+
+<div class="value-card">
+<h3>Innovation</h3>
+<p>
+Applying modern engineering principles and creative thinking to solve
+complex challenges.
+</p>
+</div>
+
+<div class="value-card">
+<h3>Integrity</h3>
+<p>
+Building trust through honesty, transparency, and ethical professional
+practices.
+</p>
+</div>
+
+<div class="value-card">
+<h3>Quality</h3>
+<p>
+Delivering engineering solutions that meet the highest standards of
+performance and reliability.
+</p>
+</div>
+
+<div class="value-card">
+<h3>Sustainability</h3>
+<p>
+Designing solutions that support long-term environmental and community
+development goals.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>
+© 2026 Transparent World Engineering Designs. All Rights Reserved.
+</p>
+</footer>
+
+<script>
+function toggleMenu(){
+    document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
